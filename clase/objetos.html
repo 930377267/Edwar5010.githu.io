@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Objetos</title>
+</head>
+<body>
+    <h1>Objectos en JavaScript</h1>
+    <script>
+        //un objeto es una coleccion de propiedades y valores 
+        var persona = {
+            nombre: "juan",
+            edad: 30,
+            ciudad:  "lima"
+        };
+
+        document.write("Nombre: " + persona.nombre + "<br>");
+        document.write("Edad: " + persona.edad + "<br>");
+        document.write("Ciudad: " + persona.ciudad);
+
+        //Iterar sobre las propiedades del objeto 
+        for(var propiedad  in persona) {
+            document.write(propiedad + ":" + persona[propiedad] + "<br>");
+        } 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Arrays</title>
+</head>
+<body>
+    <h1>Lista de Frutas </h1>
+    <script>
+        //Declarar un arreglo de fruta
+        const frutas = ["Manzana, Banana, Naranja, Fresa, Mango"]
+
+        //Obtener el elmento <ul> donde se mostrara la fruta
+        const lista = document.getElementById("frutas-listas")
+            
+        //Recorrer el arreglo usanado un bucle for
+        for(let i = 0; i <frutas.length; i++){
+
+            //Crear un nuevo alementos <li> para  cada  fruta
+            const item = document.createElement("li");
+            
+            //Establecer el texto del elemento <li> el valor actual del arreglo
+            item.textContent = frutas[i];
+            
+            //Agregar el elmento <ul> a la lista <ul>
+            lista.appendChild(item);              
+        }     
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Objeto</title>
+</head>
+<body>
+    <h1>Objeto en JavaScript</h1>
+    <script>
+        // Un objecto es una coleccion de propiedades y valores 
+        var persona = {
+            nombre: "Juan",
+            edad: 30,
+            ciudad: "Lima",
+            // Agregar una funcion al objeto
+            presentarse: function() {
+                return "Hola, mi nombre es " + this.nombre + ", tengo " + this.edad +
+                "años vivo en " + this.ciudad + ".";
+            }
+        };
+         // Iterar sobre las propiedades del objeto 
+         for (var propiedades in persona) {
+            if (typeof persona[propiedad] !== 'function') {
+                document.write(propiedad + ": " + persona[propiedad] + "<br>");
+            }
+         }
+
+         // Llamar a la funcion del objeto y mostrar el resultado 
+         document.write("<br>" + perosna.presentarse())
+    </script>
+</body>
+</html>

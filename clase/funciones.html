@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Funciones</title>
+</head>
+<body>
+    <h1>Funciones en JavaScript</h1>
+    <script>
+        // Defenicion de una funcion para saludar
+        function saludar(nombre) {
+            return "Hola, " + nombre + "!";
+        }
+
+        // Definicon de una funcion para sumar dos nemeros
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        // Definicon de una funcion par determinar si un numero es par o impar
+        function esPar(numero ) {
+            return numero % 2 === 0 ? "Par" : "Impar"
+        } 
+
+        //Deficion de una funcion que toma un array de nombre y devuelve un saludo para cada
+        function saludarNombres(nombre) {
+            return nombres.map(function(nonbre) {
+                return saludar(nombre)
+            });
+        }
+
+        // Funciones aninimas para restar dos numeros
+        var restar = function(a, b ){
+            return a - b;
+        };
+
+        // Funciones de flecha para multiplicar dos numeros 
+        var multiplicar = (a, b) => a * b;
+        
+        // Mostrar resultados
+        document.write("<h2>Saludo</h2>");
+        document.write(saludar("Nombre") + "<br>");
+        
+        document.write("<h2>Suma</h2>")
+        document.write("5 + 3 = " + sumar(5, 3) + "<br>");
+
+        document.write("<h2>Par o Impar</h2>");
+        document.write("4 es " + esPar(4) + "<br>");
+        document.write("7 es " + esPar(7) + "<br>");
+
+        document.write("<h2>Saludar Nombres</h2>");
+        var nombres = ["Ana" , "Luis" , "Maria"];
+        var saludos = saludarNombres(nombres);
+        saludos.forEach(function(saludo) {
+            document.write(saludo+"<br>");
+        });
+
+        document.write("<h2>Resta</h2>");
+        document.write("10 - 4 = " + restar(10, 4) + "<br>" );
+
+        document.write("<h2>Multiplicación</h2>")
+        document.write("6 * 7 = " + multiplicar(6, 7) + "<br>");
+
+
+
+    </script>
+</body>
+</html>
